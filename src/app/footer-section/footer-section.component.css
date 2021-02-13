@@ -1,0 +1,40 @@
+.contact {
+  font-family: 'Ubuntu', sans-serif;
+  background: #111111;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+
+}
+.contact .max-width {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+.contact .max-width div{
+margin-bottom: 15px;
+word-wrap: anywhere
+}
+.contact .max-width div span{
+  margin-left: 5px;
+}
+.contact .max-width div a{
+  margin-left: 5px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width:600px ) {
+  .contact .max-width {
+ font-size: 20px;
+  }
+  .contact .max-width div span{
+    margin-left:0;
+  }
+  .contact .max-width div a{
+    margin-left: 0;
+
+  }
+}

@@ -1,0 +1,92 @@
+.skills {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.skills .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu',sans-serif;
+}
+.skills .title::before{
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  bottom:0 ;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111111;
+}
+.skills .title::after{
+  content: "what I Know";
+  position: absolute;
+  padding: 5px;
+  bottom:-12px;
+  font-size: 20px;
+  color: crimson;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+.skills .skill-content .column{
+  width:calc(50% - 30px);
+}
+.skills .skill-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills .skill-content .left .text{
+font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skill-content .right .bars{
+  margin-bottom: 15px;
+
+}
+.skills .skill-content .right .info{
+display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills .skill-content .right span{
+font-size: 20px;
+  font-weight: 600;
+  color: crimson;
+}
+.skills .skill-content .right  .m{
+  font-size: 20px;
+  color: #111111;
+  font-weight: 500;
+}
+@media (max-width: 690px) {
+
+  .skills .skill-content .column{
+    width: 100%;
+  }
+  .skills .skill-content .right .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .skills .skill-content .right span{
+    font-size: 20px;
+    font-weight: 600;
+    color: crimson;
+  }
+  .skills .skill-content .right  .m{
+    font-size: 20px;
+    color: #111111;
+    font-weight: 500;
+  }
+}
+
